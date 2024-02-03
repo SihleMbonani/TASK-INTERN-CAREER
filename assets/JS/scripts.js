@@ -59,3 +59,67 @@ for (let i=0;i<dataTestimonialItem.length;i++) {
 modalCloseButton.addEventListener("click", toggleTestimonialModalFunction);
 overlay.addEventListener("click", toggleTestimonialModalFunction);
 
+
+
+// PORTFOLIO SECTION
+//select cataegory variables
+const selectCategory = document.querySelector("[data-select]");
+const selectCategoryItems = document.querySelectorAll("[data-select-item]");
+const selectCategoryValue = document.querySelector("[data-select-value]");
+
+
+selectCategory.addEventListener("click", function() {toggleElFunction(this); });
+
+// Add the eventListener for the select Category Items
+
+for(let i = 0; i < selectCategoryItems.length; i++){
+    selectCategoryItems[i].addEventListener("click", function(){
+
+        let selectedCategoryValue = this.innerText.toLowerCase();
+        selectCategoryValue.innerText = this.innerText;
+        toggleElFunction(selectCategory);
+        filterFunction(selectedCategoryValue);
+
+
+    });
+}
+
+// Variables for filter
+// filter variables for cataegory items that are selected in dropdown list
+const filterItems = document.querySelectorAll("[data-filter-item]");
+
+const filterFunction = function (selectedCategoryValue) {
+
+  for (let i = 0; i < filterItems.length; i++) {
+
+    if (selectedCategoryValue === "all") {
+      filterItems[i].classList.add("active");
+    } else if (selectedCategoryValue === filterItems[i].dataset.category) {
+      filterItems[i].classList.add("active");
+    } else {
+      filterItems[i].classList.remove("active");
+    }
+
+  }
+
+}
+
+// adding an eventListener in all the filter button items for large screen access/view
+let lastClickedBtn = filterBtn[0];
+
+for (let i = 0; i < filterBtn.length; i++) {
+
+  filterBtn[i].addEventListener("click", function () {
+
+    let selectedCategoryValue = this.innerText.toLowerCase();
+    selectedCategoryValue.innerText = this.innerText;
+    filterFunction(selectedCategoryValue);
+
+    lastClickedBtn.classList.remove("active");
+    this.classList.add("active");
+    lastClickedBtn = this;
+
+  });
+
+}
+
