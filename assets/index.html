@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sihle Mbonani - Personal Portfolio</title>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./Images/logo.ico" type="image/x-icon">
+
+    <!-- own css links for customization -->
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <!-- MAIN -->
+    <main>
+        <!-- sidebar -->
+
+
+        <aside class="sidebar " data-sidebar>
+            <div class="sidebar-info">
+                <figure class="avatar-box">
+                    <img src="./Images/avatar-2.png" alt="avatarProfile" width="80">
+                    <!-- <br> -->
+                </figure>
+
+                <div class="info-content">
+                    <h1 class="name" title="Sihle Mbonani">Sihle Mbonani</h1>
+                    <p class="title">Web Developer</p>
+                </div>
+
+                <button class="info_more-btn" data-sidebar-btn>
+                    <span>Show Contacts</span>
+
+                    <ion-icon name="chevron-down"></ion-icon>
+                </button>
+
+            </div>
+
+            <div class="sidebar-info_more">
+                <div class="seperator"></div>
+
+                <ul class="contact-list">
+                    <li class="contact-item">
+
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Email</p>
+                            <a href="gmail:smbonani82@gmail.com" class="contact-link">smbonani82@gmail.com</a>
+                        </div>
+                    </li>
+
+
+                    <li class="contact-item">
+
+                        <div class="icon-box">
+                            <ion-icon name="phone-portrait-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Mobile</p>
+                            <a href="tel:=+27727252968" class="contact-text">(+27) 072 725 2968</a>
+                        </div>
+                    </li>
+
+
+                    <li class="contact-item">
+
+                        <div class="icon-box">
+                            <ion-icon name="calendar-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Date of Birth</p>
+                            <time datetime="2000-07-21"> 21 July 2000</time>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+
+                        <div class="icon-box">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Location</p>
+                            <address>Benoni, Guateng, South Africa</address>
+                        </div>
+                    </li>
+
+
+                </ul>
+
+                <div class="seperator"></div>
+
+                <ul class="social-list">
+                    <li class="social-item">
+                        <a href="" class="social-link">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li class="social-item">
+                        <a href="" class="social-link">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li class="social-item">
+                        <a href="" class="social-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+
+                </ul>
+
+
+            </div>
+
+        </aside>
+
+        <!-- END OF SIDEBAR -->
+
+        <!-- Body Content -->
+        <div class="main-content">
+            <!-- My Navbar -->
+            <nav class="navbar">
+
+                <ul class="navbar-list">
+                    <!--Bio  -->
+                  <li class="navbar-item">
+                    <button class="navbar-link  active" data-nav-link>About Me</button>
+                  </li>
+                  <!-- CV -->
+                  <li class="navbar-item">
+                    <button class="navbar-link" data-nav-link>My Resume</button>
+                  </li>
+                  <!-- Portfolio- INF 370 Project -->
+                  <li class="navbar-item">
+                    <button class="navbar-link" data-nav-link>My Portfolio</button>
+                  </li>
+                  <!-- might remove -->
+                  <li class="navbar-item">
+                    <button class="navbar-link" data-nav-link>Blog</button>
+                  </li>
+        
+                  <li class="navbar-item">
+                    <button class="navbar-link" data-nav-link>Contact</button>
+                  </li>
+        
+                </ul>
+        
+            </nav>
+
+            <!-- End of  My NavBar -->
+
+            <!--  About me section -->
+            <article class="bio  active" data-page="bio">
+                <header>
+                    <h2 class="h2 aticle-title">About Me</h2>
+                </header>
+
+                <section class="bio-text">
+                    <p>
+                        "I'm Sihle Mbonani, a recent Information Technology graduate with a focus on Information Systems. In my recent project, 'Simply Flores,' I led a team in transforming a paper-based system for a flower company into a digital solution using technologies like Visual Studio, SQL, and Angular.
+                    </p>    
+                    <p>As Head Girl at St Francis College, I honed my leadership and communication skills. Proficient in HTML5, CSS3, JavaScript, C#, and more, I'm eager to contribute my technical expertise.
+
+                        Fluent in Zulu and English, with interests in chess, sports, and dance, I'm excited about joining FDM's Software Development Graduate Programme to apply my skills and be part of innovative projects
+                    </p>
+                </section>
+
+                <!-- Services section -->
+                <section class="service">
+
+                    <h3 class="h3 service-title">What I am currently doing</h3>
+          
+                    <ul class="service-list">
+          
+                      <li class="service-item">
+          
+                        <div class="service-icon-box">
+                          <img src="./Images/icon-design.svg" alt="Icon" width="40">
+                        </div>
+          
+                        <div class="service-content-box">
+                          <h4 class="h4 service-item-title">Web design</h4>
+                            <!-- Figma -->
+                          <p class="service-item-text">
+                            The most modern and high-quality design made at a professional level.
+                          </p>
+                        </div>
+          
+                      </li>
+          
+                      <li class="service-item">
+          
+                        <div class="service-icon-box">
+                          <img src="./Images/icon-dev.svg" alt="Web development icon" width="40">
+                        </div>
+          
+                        <div class="service-content-box">
+                          <h4 class="h4 service-item-title">Web Development</h4>
+                            <!--  -->
+                          <p class="service-item-text">
+                            High-quality development of sites at the professional level.
+                          </p>
+                        </div>
+          
+                      </li>
+          
+                    </ul>
+          
+                </section>
+
+                <!-- END  SERVICES SECTION -->
+
+                <!-- TESTIMONIAL SECTION -->
+                <section id="testimonials" class="section-testimonials">
+                    <h3 class="h3 testimonials-title">Testimonials</h3>
+
+                    <ul class="testimonials-list has-scrollbar">
+          
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+            
+                                <figure class="testimonials-avatar-box">
+                                    <img src="./Images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                                </figure>
+                
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Johan Janse van Rensburg</h4>
+                
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>
+                                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                                    lot of experience
+                                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                                    consectetur adipiscing
+                                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                                    </p>
+                                </div>
+            
+                            </div>
+                        </li>
+          
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+                
+                                <figure class="testimonials-avatar-box">
+                                    <img src="./Images/my-avatar.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                                </figure>
+                
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Peter Harris</h4>
+                
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>
+                                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                                    lot of experience
+                                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                                    consectetur adipiscing
+                                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                                    </p>
+                                </div>
+            
+                            </div>
+                        </li>
+
+                    </ul>
+                </section>
+
+                <!-- END  TESTIMONIAL SECTION -->
+
+                <!-- Testimonial Modals -->
+                <div class="modal-container" data-modal-container>
+
+                    <div class="overlay" data-overlay></div>
+          
+                    <section class="testimonials-modal">
+          
+                        <button class="modal-close-btn" data-modal-close-btn>
+                            <ion-icon name="close-outline"></ion-icon>
+                        </button>
+            
+                        <div class="modal-img-wrapper">
+                            <figure class="modal-avatar-box">
+                            <img src="./Images/avatar-1.png" alt="Mentor" width="80" data-modal-img>
+                            </figure>
+            
+                            <img src="./Images/icon-quote.svg" alt="quote-icon">
+                        </div>
+            
+                        <div class="modal-content">
+            
+                            <h4 class="h3 modal-title" data-modal-title>Johan Janse van Rensburg</h4>
+            
+                            <time datetime="2021-06-14">31 January, 2024</time>
+            
+                            <div data-modal-text>
+                            <p>
+                                Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                                lot of experience
+                                and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                                consectetur adipiscing
+                                elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                            </p>
+                            </div>
+            
+                        </div>
+          
+                    </section>
+          
+                </div>
+                <!--  End Testimonial Modals -->
+
+
+                <!-- --CLIENTS WORKED WITH -->
+                <section class="clients">
+                    <h3 class="h3 clients-title">Clients Worked With:</h3>
+                    <ul class="clients-list has-scrollbar">
+                        <!-- Simply Flores Image/ Logo -->
+                        <li class="clients-item">
+                            <a href="#">
+                                <img src="./Images/logo-1-color.png" alt="Client Logo">
+                            </a>
+                           
+                        </li>
+
+                        <li class="clients-item">
+                            <a href="#">
+                                <img src="./Images/logo-2-color.png" alt="Client Logo">
+                            </a>
+                           
+                        </li>
+                    </ul>
+                </section>
+                <!-- End of client Section -->
+
+
+
+            </article>
+            <!-- END OF SECTION -->
+
+            <!-- -----  MY CV/RESUME SECTION -->
+            <article class="resume  active" data-page="resume">
+                <header>
+                    <h2 class="h2 article-title">My Resume</h2>
+                </header>
+
+                <!-- TIMELINE SECTION-EDUCATION, EXPERIENCE, SKILS -->
+                <section class="timeline">
+
+                    <div class="title-wrapper">
+                      <div class="icon-box">
+                        <ion-icon name="book-outline"></ion-icon>
+                      </div>
+          
+                      <h3 class="h3">Education</h3>
+                    </div>
+                    <!-- UNIVERSITY OF PRETORIA & STF -->
+                    <ol class="timeline-list">
+          
+                      <li class="timeline-item">
+          
+                        <h4 class="h4 timeline-item-title">University of Pretoria</h4>
+          
+                        <span>2024 — current</span>
+                        <!-- Honours -->
+                        <p class="timeline-text">
+                          Currently studying for my Honours in the Bachelor of Information Technolgy (Information Systems) degree.
+                        </p>
+          
+                      </li>
+                      <!-- My Bachelors degree -->
+                      <li class="timeline-item">
+          
+                        <h4 class="h4 timeline-item-title">University of Pretoria</h4>
+          
+                        <span>2019 — 2023</span>
+          
+                        <p class="timeline-text">
+                          Completed my degree for the Bachelor of Information Technology (Information Systems).
+                        </p>
+          
+                      </li>
+          
+                      <li class="timeline-item">
+          
+                        <h4 class="h4 timeline-item-title">St Francis College</h4>
+          
+                        <span>2009 — 2018</span>
+          
+                        <p class="timeline-text">
+                          Obtained my National Senior Certificate (Matric).
+                        </p>
+          
+                      </li>
+          
+                    </ol>
+          
+                </section>
+          
+                <section class="timeline">
+          
+                    <div class="title-wrapper">
+                      <div class="icon-box">
+                        <ion-icon name="book-outline"></ion-icon>
+                      </div>
+          
+                      <h3 class="h3">Volunteering</h3>
+                    </div>
+          
+                    <ol class="timeline-list">
+          
+                      <li class="timeline-item">
+          
+                        <h4 class="h4 timeline-item-title">JCP 202 Community Project</h4>
+          
+                        <span>February 2021 — October 2021</span>
+          
+                        <p class="timeline-text">
+                          Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
+                          molestias
+                          exceptur.
+                        </p>
+          
+                      </li>
+                    </ol>
+          
+                </section>
+
+                <!-- END OF EDUCATION SECTION -->
+
+
+                <!-- MY SKILLS SECTION -->
+                <section class="mySkills">
+                    
+                </section>
+
+            </article>
+
+
+        </div>
+        
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- JS file link -->
+    <script src="./JS/scripts.js"></script>
+
+    <!-- ionicon link -->
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js"></script> -->
+
+    
+</body>
+</html>
