@@ -1028,7 +1028,7 @@ main{
     --scale: 0.8;
 
     background: var(--jet);
-    color:  hsl(240, 70%, 67%);;
+    color:  hsl(240, 70%, 67%);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1079,5 +1079,115 @@ main{
 }
 
 
+/* CONTACT ME SECTION */
+.contactMe-form{
+   margin-bottom: 10px; 
+}
+
+.form-title{
+    margin-bottom: 20px;  
+}
+
+.input-wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.form-input{
+    color: var(--white-2);
+    font-size: var(--fs-6);
+    font-weight: var(--fw-400);
+    padding: 13px 28px;
+    border: 1px solid var(--jet);
+    border-radius: 14px;
+    outline: none;
+}
+
+.form-input::placeholder {
+    font-weight: var(--fw-500);
+}
+
+.form-input:focus {
+    border-color: hsl(240, 70%, 67%);
+}
+
+textarea.form-input{
+    min-height: 100px;
+    height: 120px;
+    max-height: 200px;
+    resize: vertical;
+    margin-bottom: 25px;
+}
+
+textarea.form-input::-webkit-resizer{
+    display: none;
+}
+
+.form-input:focus:invalid{
+    border-color: rgb(210, 45, 45);
+}
+
+.form-btn{
+    position: relative;
+    width: 100%;
+    background: var(--border-gradient-onyx);
+    color: var(--orange-yellow-crayola);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 28px;
+    border-radius: 14px;
+    font-size: var(--fs-6);
+    text-transform: capitalize;
+    box-shadow: var(--shadow-3);
+    z-index: 1;
+    transition: var(--transition-1);
+}
+
+.form-btn::before{
+    content: "";
+    position: absolute;
+    inset: 1px;
+    background: var(--bg-gradient-jet);
+    border-radius: inherit;
+    z-index: -1;
+    transition: var(--transition-1);
+}
+
+
+.form-btn ion-icon {
+    font-size: 16px;
+}
+
+.form-btn:hover {
+    background: #3498db;
+}
+
+.form-btn:hover::before{
+    background: hsl(240, 70%, 67%);
+}
+
+.form-btn:disabled{
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.form-btn:disabled:hover{
+    
+    background: var(--border-gradient-onyx);
+}
+
+.form-btn:disabled:hover::before{
+    background: var(--bg-gradient-jet);
+}
+
+
+/* -----WEBSITE RESPONSIVENESS */
+/* when screen/ view is larger tha 768px */
+
+/* COMMONLY USED CSSS STYLINGS */
 
 

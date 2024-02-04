@@ -138,20 +138,20 @@
                 <ul class="navbar-list">
                     <!--Bio  -->
                   <li class="navbar-item">
-                    <button class="navbar-link  active" data-nav-link>About Me</button>
+                    <button class="navbar-link  active" data-nav-link>About</button>
                   </li>
                   <!-- CV -->
                   <li class="navbar-item">
-                    <button class="navbar-link" data-nav-link>My Resume</button>
+                    <button class="navbar-link" data-nav-link>Resume</button>
                   </li>
                   <!-- Portfolio- INF 370 Project -->
                   <li class="navbar-item">
-                    <button class="navbar-link" data-nav-link>My Portfolio</button>
+                    <button class="navbar-link" data-nav-link>Portfolio</button>
                   </li>
                   <!-- might remove -->
-                  <li class="navbar-item">
+                  <!-- <li class="navbar-item">
                     <button class="navbar-link" data-nav-link>Blog</button>
-                  </li>
+                  </li> -->
         
                   <li class="navbar-item">
                     <button class="navbar-link" data-nav-link>Contact</button>
@@ -225,7 +225,7 @@
                 <!-- END  SERVICES SECTION -->
 
                 <!-- TESTIMONIAL SECTION -->
-                <section id="testimonials" class="section-testimonials">
+                <section class="section-testimonials">
                     <h3 class="h3 testimonials-title">Testimonials</h3>
 
                     <ul class="testimonials-list has-scrollbar">
@@ -350,7 +350,7 @@
             <!-- END OF SECTION -->
 
             <!-- -----  MY CV/RESUME SECTION -->
-            <article class="resume  active" data-page="resume">
+            <article class="resume" data-page="resume">
                 <header>
                     <h2 class="h2 article-title">My Resume</h2>
                 </header>
@@ -510,7 +510,7 @@
             <!-- END OF CV / RESUME SECTION -->
 
             <!-- MY  PORTFOLIO SECTION-->
-            <article class="myPortfolio active" data-page="My Portfolio">  <!--datappage might change to Portfolio or myPortfolio-->
+            <article class="myPortfolio" data-page="portfolio">  <!--datappage might change to Portfolio or myPortfolio-->
                 <header>
                     <h2 class="h2 article-title">Portfolio</h2>
                   </header>
@@ -708,16 +708,50 @@
             <!-- END OF PORTFOLIO SECTION -->
 
             <!-- BLOG SECTION -->
-            <article class="blog active" data-page="blog">
+            <!-- <article class="blog active" data-page="blog">
+
+
                 <header>
                     <h2 class="h2 article-title">My Blogs</h2>
                 </header>
 
                 <section class="blog-posts">
 
-                    
+
 
                 </section>
+
+            </article> -->
+
+
+            <!-- My CONTACT DETAILS AND CONTACT FORM -->
+            <article class="myContactDetails" data-page="contact">
+                <header>
+                    <h2 class="h2 article-title">Contact Me</h2>
+                </header>
+
+                    <section class="contactMe-form">
+                        <h3 class="h3 form-title">Contact Form</h3>
+
+                        <form action="#" class="form" data-form>
+                            <div class="input-wrapper">
+                                <input type="text" name="fullName" class="form-input" placeholder="Enter Fullname" required data-form-input>
+                                <!-- email -->
+                                <input type="email" name="email" class="form-input" placeholder="Enter Email address" required data-form-input>
+                            </div>
+
+                            <!-- text area -->
+                            <textarea name="message" class="form-input" placeholder="Enter Your Message Here!" required data-form-input></textarea>
+
+                            <button class="form-btn" type="submit" disabled data-form-btn>
+                                <ion-icon name="paper-plane"></ion-icon>
+                                <span>Send Message</span>
+                            </button>
+                        </form>
+
+                    </section>
+
+            
 
             </article>
 

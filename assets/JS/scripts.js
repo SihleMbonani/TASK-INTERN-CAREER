@@ -105,21 +105,64 @@ const filterFunction = function (selectedCategoryValue) {
 }
 
 // adding an eventListener in all the filter button items for large screen access/view
-let lastClickedBtn = filterBtn[0];
+// let lastClickedBtn = filterBtn[0];
 
-for (let i = 0; i < filterBtn.length; i++) {
+// for (let i = 0; i < filterBtn.length; i++) {
 
-  filterBtn[i].addEventListener("click", function () {
+//   filterBtn[i].addEventListener("click", function () {
 
-    let selectedCategoryValue = this.innerText.toLowerCase();
-    selectedCategoryValue.innerText = this.innerText;
-    filterFunction(selectedCategoryValue);
+//     let selectedCategoryValue = this.innerText.toLowerCase();
+//     selectedCategoryValue.innerText = this.innerText;
+//     filterFunction(selectedCategoryValue);
 
-    lastClickedBtn.classList.remove("active");
-    this.classList.add("active");
-    lastClickedBtn = this;
+//     lastClickedBtn.classList.remove("active");
+//     this.classList.add("active");
+//     lastClickedBtn = this;
+
+//   });
+
+// }
+
+
+// CONTACT FORM SECTION
+//Contact form variables
+const form = document.querySelector("[data-form]");
+const formInputs = document.querySelectorAll("[data-form-input]");
+const formBtn = document.querySelector("[data-form-btn]");
+
+// adding an eventlistener to all contact form input fields
+for (let i = 0; i < formInputs.length; i++) {
+  formInputs[i].addEventListener("input", function() {
+
+    //This is to add the validation for the form
+    if (form.checkValidity()) {
+        formBtn.removeAttribute("disabled");
+    } else {
+        formBtn.setAttribute("disabled", "");
+    }
 
   });
+} 
 
+
+// NAVIGATING THROUGH THE PAGES
+const myNavLinks = document.querySelectorAll("[data-nav-link]");
+const webPortfolioPages = document.querySelectorAll("[data-page]");
+
+// adding the eventListener to all the nav links
+for (let i = 0; i < myNavLinks.length; i++) {
+    myNavLinks[i].addEventListener("click", function () {
+
+    for (let i = 0; i < webPortfolioPages.length; i++) {
+      if (this.innerHTML.toLowerCase() === webPortfolioPages[i].dataset.page) {
+        webPortfolioPages[i].classList.add("active");
+        myNavLinks[i].classList.add("active");
+        window.scrollTo(0, 0);
+      } else {
+        webPortfolioPages[i].classList.remove("active");
+        myNavLinks[i].classList.remove("active");
+      }
+    }
+
+  });
 }
-
