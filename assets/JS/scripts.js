@@ -67,6 +67,7 @@ const selectCategory = document.querySelector("[data-select]");
 const selectCategoryItems = document.querySelectorAll("[data-select-item]");
 const selectCategoryValue = document.querySelector("[data-select-value]");
 
+const filterBtn = document.querySelectorAll("[data-filter-btn]");
 
 selectCategory.addEventListener("click", function() {toggleElFunction(this); });
 
@@ -105,23 +106,23 @@ const filterFunction = function (selectedCategoryValue) {
 }
 
 // adding an eventListener in all the filter button items for large screen access/view
-// let lastClickedBtn = filterBtn[0];
+let lastClickedBtn = filterBtn[0];
 
-// for (let i = 0; i < filterBtn.length; i++) {
+for (let i = 0; i < filterBtn.length; i++) {
 
-//   filterBtn[i].addEventListener("click", function () {
+  filterBtn[i].addEventListener("click", function () {
 
-//     let selectedCategoryValue = this.innerText.toLowerCase();
-//     selectedCategoryValue.innerText = this.innerText;
-//     filterFunction(selectedCategoryValue);
+    let selectedCategoryValue = this.innerText.toLowerCase();
+    selectedCategoryValue.innerText = this.innerText;
+    filterFunction(selectedCategoryValue);
 
-//     lastClickedBtn.classList.remove("active");
-//     this.classList.add("active");
-//     lastClickedBtn = this;
+    lastClickedBtn.classList.remove("active");
+    this.classList.add("active");
+    lastClickedBtn = this;
 
-//   });
+  });
 
-// }
+}
 
 
 // CONTACT FORM SECTION
