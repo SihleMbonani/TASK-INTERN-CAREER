@@ -3,7 +3,7 @@
 :root{
     /* colours */
     --primary-color:#3498db;
-
+    --secondary-color: hsl(240, 70%, 67%); 
     /* gradients */
     --bg-gradient-onyx: linear-gradient(
         to bottom right, 
@@ -25,7 +25,7 @@
     
     --bg-gradient-yellow-2: linear-gradient(
         135deg, 
-        hsla(45, 100%, 71%, 0.251) 0%,
+        hsla(195, 94%, 33%, 0.92) 0%,
         hsla(35, 100%, 68%, 0) 59.86%
     ), hsl(240, 2%, 13%);
 
@@ -126,7 +126,8 @@ input, textarea {
 }
 
 :focus{
- outline-color: var(--orange-yellow-crayola);   
+    outline-color: var(--primary-color);
+ /* outline-color: var(--orange-yellow-crayola);    */
 }
 
 html{
@@ -159,7 +160,7 @@ body{
    justify-content: center;
    align-items: center;
    font-size: 16px;
-   color: var(--orange-yellow-crayola);
+   color: var(--secondary-color);
    box-shadow: var(--shadow-1);
    z-index: 1;
 
@@ -218,7 +219,7 @@ article.active {
   left: 0;
   width: 30px;
   height: 3px;
-  background: var(--text-gradient-yellow);
+  background: var(--secondary-color);
   border-radius: 3px;
 }
 
@@ -226,7 +227,7 @@ article.active {
 .has-scrollbar::-webkit-scrollbar{
     width: 5px;
     /* horizontal scrollbar */
-    height: 5px;
+    height: 6px;
 }
 
 .has-scrollbar::-webkit-scrollbar-track{
@@ -235,7 +236,7 @@ article.active {
 }
 
 .has-scrollbar::-webkit-scrollbar-thumb{
-    background: var(--orange-yellow-crayola);
+    background: var(--secondary-color);
     border-radius: 5px;
 }
 
@@ -285,13 +286,13 @@ main{
 
 .avatar-box {
     background: var(--bg-gradient-onyx);
-    border-radius: 20px;
+    border-radius: 16px;
 
 }
 
 .info-content .name{
     color: var(--white-2);
-    font-size: var(--fs-3);
+    font-size: var(--fs-1);
     font-weight: var(--fw-500);
     letter-spacing: -0.25px;
     margin-bottom: 10px;
@@ -300,7 +301,7 @@ main{
 .info-content .title {
     color: var(--white-1);
     background: var(--onyx);
-    font-size: var(--fs-8);
+    font-size: var(--fs-7);
     font-weight: var(--fw-300);
     width: max-content;
     padding: 3px 12px;
@@ -311,31 +312,32 @@ main{
 .info_more-btn{
     position: absolute;
     top: -15px;
-    right: -15px;
+    right: -40px;
     border-radius: 0 15px;
-    font-size: 13px;
-    color: var(--orange-yellow-crayola);
+    font-size: 10px;
+    /* color: white; */
+    color: var(--primary-color);
     background: var(--border-gradient-onyx); /*border-gradient-onyx*/
-    padding: 10px;
+    padding: 18px;
     box-shadow: var(--shadow-2);
     transition: var(--transition-1);
     z-index: 1;
 }
 
 .info_more-btn::before{
-    content: "";
+    content: " ";
     position: absolute;
     inset: 1px;  /*query*/
     border-radius: inherit;
-    background: var(--bg-gradient-jet);
+    /* background: var(--bg-gradient-jet); */
     transition: var(--transition-1);
     z-index: 1;
 
 }
-
+/* 
 .info_more-btn:hover, .info_more-btn:focus {
-    background: var(--bg-gradient-yellow-1);
-}
+    /background: var(--primary-color); /
+} */
 
 .info_more-btn:hover::before, 
 .info_more-btn:focus::before{
@@ -402,14 +404,14 @@ main{
 }
   
 .social-item .social-link {
-    color: var(--light-gray-70);
-    font-size: 18px;
+    color: var(--light-gray);
+    font-size: 25px;
 }
   
   
 .social-item .social-link:hover { color: var(--light-gray); }
   
-/* NAVBAR SECTION -------------------------------------*/
+/* ------------------- NAVBAR SECTION -------------------------------------*/
 .navbar{
     position: fixed;
     bottom: 0;
@@ -445,7 +447,7 @@ main{
 }
   
 .navbar-link.active{ 
-    color: var(--orange-yellow-crayola); 
+    color: var(--secondary-color); 
 
 }
 
@@ -830,7 +832,7 @@ main{
 
 .timeline-list span{
     line-height: 1.6;
-    color: var(--vegas-gold);
+    color: var(--secondary-color);
     font-weight: var(--fw-400);
 }
 
@@ -852,7 +854,7 @@ main{
     left: -33px;
     height: 6px;
     width: 6px;
-    background: rgb(200, 176, 52);
+    background: var(--secondary-color);
     /* color: var(--bg-gradient-yellow-2); */
     border-radius: 58%;
     box-shadow: 0 0 0 4px var(--jet);
@@ -902,10 +904,27 @@ main{
 }
 
 .skill-progress-fill{
-    background: var(--primary-color);
+    background: var(--secondary-color);
     height: 100%;
     border-radius: inherit;
 }
+
+.resume-btn{
+    border: solid 1px var(--primary-color);
+    padding: 5px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    /* background-color: var(--primary-color); */
+}
+
+.resume-btn a{
+    color: var(--light-gray);
+}
+
+.resume-btn:hover{
+    background-color: rgb(92, 125, 231);
+}
+
 
 /* ----------------------Portfolio SECTION ------------*/
 
@@ -1133,7 +1152,7 @@ textarea.form-input::-webkit-resizer{
     position: relative;
     width: 100%;
     background: var(--border-gradient-onyx);
-    color: var(--orange-yellow-crayola);
+    color: var(--secondary-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1583,7 +1602,7 @@ textarea.form-input::-webkit-resizer{
     }
 
     .filter-item button.active {
-        color: var(--orange-yellow-crayola);
+        color: var(--secondary-color);
     }
 
 
@@ -1636,8 +1655,13 @@ textarea.form-input::-webkit-resizer{
     }
 
     /*  COMMUNLY USED STYLING */
-    .sidebar, article{
-        width: 950px;
+    /* .sidebar{
+        width: 100px;
+        box-shadow: var(--shadow-5);
+    } */
+
+    .sidebar article{
+        width: 800px;
         box-shadow: var(--shadow-5);
     }
 
