@@ -1205,8 +1205,48 @@ textarea.form-input::-webkit-resizer{
 
 
 /* -----WEBSITE RESPONSIVENESS */
+@media (min-width: 375px){
+
+    .sidebar {
+        max-height: 150px;
+        margin-bottom: 20px;
+    }
+
+    .sidebar.active{
+        max-height: 480px;
+    }
+
+    .sidebar-info{
+        gap: 20px;
+    }
+    /* CLIENT */
+    .clients-item{
+        min-width: calc(33.33% - 10px);
+
+    }
+
+    /* PORTFOLIO */
+    .project-img{
+        height: auto;
+    }
+
+}
+
 /* when screen/ view is larger than 450px */
 @media (min-width: 450px){
+
+    .sidebar {
+        max-height: 180px;
+        margin-bottom: 30px;
+    }
+
+    .sidebar.active{
+        max-height: 480px;
+    }
+
+    .sidebar-info{
+        gap: 20px;
+    }
     /* CLIENT */
     .clients-item{
         min-width: calc(33.33% - 10px);
